@@ -1,12 +1,13 @@
 
-
-<h2>&lt;polygon&gt;</h2>
-<p>&lt;polygon&gt; 요소는 폴리건 이미지를 설정합니다.</p>
+<h2>&lt;clipPath&gt;</h2>
+<p>&lt;clipPath&gt; 요소는 클립 패스를 정의합니다.</p>
 
 <hr />
 
-<h3>&lt;polygon&gt;</h3>
-<p class="blue">&lt;polygon&gt; 요소는 폴리건 이미지를 설정합니다.</p>
+<h3>&lt;clipPath&gt;</h3>
+<p class="blue">&lt;clipPath&gt; 요소는 클리핑 마스크의 클립 영역 패스를 정의합니다.</p>
+
+
 
 
 <!--<div class="table-responsive">
@@ -33,7 +34,7 @@
 
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
-    <li>&lt;polygon&gt; 요소는 폴리건 이미지를 설정합니다.</li>
+    <li>&lt;clipPath&gt; 요소는 클리핑 마스크의 클립 영역 패스를 정의합니다.</li>
 </ul>
 
 
@@ -69,41 +70,37 @@
 
 
 
+
+
 <style>
 .svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
-.polygon1 {
-    fill: #f48fb1;
-}
-.polygon2 {
-    fill: #f48fb1; 
-}
-.polygon3 {
-    fill: #f48fb1; 
-}
-.polygon4 {
-    fill: #f48fb1; 
-}
 </style>
 
 <!-- Sample1 -->
-<h4 class="pt50">1. 폴리건 <span><a href="https://webstoryboy.github.io/CSS/sample615-1.html" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span></h4>
-<p>SVG를 이용한 폴리건 모양입니다.</p>
+<h4 class="pt50">1. clipPath <span><a href="https://webstoryboy.github.io/CSS/sample627-1.html" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span></h4>
+<p>SVG를 이용한 clipPath입니다.</p>
 <div class="sample">
     <h5>Sample1<span class="dot"><i></i><i></i><i></i></span></h5>
     <div class="ex">
         <!-- ex -->
         <div class="svgBox">
             <svg class="svg">
-                <polygon class="polygon1" points="120,142 9,93 107,22" ></polygon>
+                <image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="160" hight="160" />
             </svg>
             <svg class="svg">
-                <polygon class="polygon2" points="130,140 48,149 13,74 74,18 146,58"></polygon>
+                <image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="200%" clip-path="circle(50px at center)" />
             </svg>
             <svg class="svg">
-                <polygon class="polygon3" points="130,128 65,148 15,102 30,36 95,16 145,62"></polygon>
+                <clipPath id="clipPath1">
+                    <polygon points="120,142 9,93 107,22"></polygon>
+                </clipPath>
+                <image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="url(#clipPath1)" />
             </svg>
             <svg class="svg">
-                <polygon class="polygon4" points="134,134 88,117 48,145 49,97 10,68 57,54 72,8 100,48 149,48 119,87"></polygon>
+                <clipPath id="clipPath2">
+                    <polygon points="134,134 88,117 48,145 49,97 10,68 57,54 72,8 100,48 149,48 119,87 "></polygon>
+                </clipPath>
+                <image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="url(#clipPath2)" />
             </svg>
         </div>
         <!-- ex -->
@@ -116,18 +113,24 @@
     <h5>HTML<span class="dot"><i></i><i></i><i></i></span></h5>
     <div class="html">
 <pre class="line-numbers"><code class="language-markup">&lt;div class="svgBox"&gt;
-&lt;svg class="svg"&gt;
-    &lt;polygon class="polygon1" points="120,142 9,93 107,22" &gt;&lt;/polygon&gt;
-&lt;/svg&gt;
-&lt;svg class="svg"&gt;
-    &lt;polygon class="polygon2" points="130,140 48,149 13,74 74,18 146,58"&gt;&lt;/polygon&gt;
-&lt;/svg&gt;
-&lt;svg class="svg"&gt;
-    &lt;polygon class="polygon3" points="130,128 65,148 15,102 30,36 95,16 145,62"&gt;&lt;/polygon&gt;
-&lt;/svg&gt;
-&lt;svg class="svg"&gt;
-    &lt;polygon class="polygon4" points="134,134 88,117 48,145 49,97 10,68 57,54 72,8 100,48 149,48 119,87"&gt;&lt;/polygon&gt;
-&lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="160" hight="160" /&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="circle(50px at center)" /&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;clipPath id="clipPath1"&gt;
+            &lt;polygon points="120,142 9,93 107,22"&gt;&lt;/polygon&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="url(#clipPath1)" /&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;clipPath id="clipPath2"&gt;
+            &lt;polygon points="134,134 88,117 48,145 49,97 10,68 57,54 72,8 100,48 149,48 119,87 "&gt;&lt;/polygon&gt;
+        &lt;/clipPath&gt;
+        &lt;image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="url(#clipPath2)" /&gt;
+    &lt;/svg&gt;
 &lt;/div&gt;</code></pre>
     </div>
 </div>
@@ -136,11 +139,7 @@
 <div class="sample">
     <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
     <div class="html">
-<pre class="line-numbers"><code class="language-css">.svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
-.polygon1 {fill: #f48fb1;}
-.polygon2 {fill: #f48fb1;}
-.polygon3 {fill: #f48fb1;}
-.polygon4 {fill: #f48fb1;}</code></pre>
+<pre class="line-numbers"><code class="language-css">.svgBox .svg {width: 160px; height: 160px; background: #ffebee;}</code></pre>
     </div>
 </div>
 <!-- sample1 -->
@@ -151,7 +150,7 @@
     <h5>TOTAL<span class="dot"><i></i><i></i><i></i></span></h5>
     <div class="html on">
 <pre class="line-numbers"><code class="language-markup">&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html lang="ko"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
@@ -159,33 +158,27 @@
     &lt;title&gt;SVG&lt;/title&gt;
     &lt;style&gt;
     .svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
-    .polygon1 {
-        fill: #f48fb1;
-    }
-    .polygon2 {
-        fill: #f48fb1; 
-    }
-    .polygon3 {
-        fill: #f48fb1; 
-    }
-    .polygon4 {
-        fill: #f48fb1; 
-    }
     &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div class="svgBox"&gt;
         &lt;svg class="svg"&gt;
-            &lt;polygon class="polygon1" points="120,142 9,93 107,22" &gt;&lt;/polygon&gt;
+            &lt;image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="160" hight="160" /&gt;
         &lt;/svg&gt;
         &lt;svg class="svg"&gt;
-            &lt;polygon class="polygon2" points="130,140 48,149 13,74 74,18 146,58"&gt;&lt;/polygon&gt;
+            &lt;image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="circle(50px at center)" /&gt;
         &lt;/svg&gt;
         &lt;svg class="svg"&gt;
-            &lt;polygon class="polygon3" points="130,128 65,148 15,102 30,36 95,16 145,62"&gt;&lt;/polygon&gt;
+            &lt;clipPath id="clipPath1"&gt;
+                &lt;polygon points="120,142 9,93 107,22"&gt;&lt;/polygon&gt;
+            &lt;/clipPath&gt;
+            &lt;image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="url(#clipPath1)" /&gt;
         &lt;/svg&gt;
         &lt;svg class="svg"&gt;
-            &lt;polygon class="polygon4" points="134,134 88,117 48,145 49,97 10,68 57,54 72,8 100,48 149,48 119,87"&gt;&lt;/polygon&gt;
+            &lt;clipPath id="clipPath2"&gt;
+                &lt;polygon points="134,134 88,117 48,145 49,97 10,68 57,54 72,8 100,48 149,48 119,87 "&gt;&lt;/polygon&gt;
+            &lt;/clipPath&gt;
+            &lt;image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="url(#clipPath2)" /&gt;
         &lt;/svg&gt;
     &lt;/div&gt;
 &lt;/body&gt;
@@ -197,8 +190,12 @@
     
 
 
+
+
+
+
 <h4 class="pt50">호환성(Compatibility) 
-    <a href="http://webzz.tistory.com/227" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
+    <a href="http://webzz.tistory.com/635" class="link"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/link.png"><span class="ir_pm">더보기</span></a>
     <span class="can">caniuse.com <a href="https://caniuse.com/#search=SVG" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span>
 </h4>
 <div class="table-responsive">
@@ -224,7 +221,7 @@
         </thead>
         <tbody>
             <tr>
-                <td scope="row">&lt;polygon&gt;</td>
+                <td class="ce" scope="row">&lt;text&gt;</td>
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 크롬 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 파이어폭스 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 사파리 -->
@@ -240,14 +237,13 @@
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- 안드로이드 -->
                 <td><span title="사용가능합니다.">사용가능</span></td><!-- IOS -->
             </tr>
-            
         </tbody>
     </table>
 </div>
 
 
-
 <h4 class="pt40">참고(Reference)</h4>
 <ul>
-    <li>Scalable Vector Graphics (SVG)2 <a href="https://svgwg.org/svg2-draft/shapes.html#PolygonElement" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>MDN SVG <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Element/clipPath" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
+    <li>CSS Masking Module Level 1 <a href="https://drafts.fxtf.org/css-masking-1/#ClipPathElement" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></li>
 </ul>

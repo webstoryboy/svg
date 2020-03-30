@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG</title>
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One&display=swap" rel="stylesheet">
+    <style>
+        .svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+    </style>
+</head>
+<body>
+    <div class="svgBox">
+        <svg class="svg">
+            <text x="10" y="100" font-size="45" font-family ="Kumar One">TEXT</text>
+        </svg>
+        <svg class="svg">
+            <pattern id="pattern1" patternUnits="userSpaceOnUse" width="160" height="160">
+                <image xlink:href="https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover03.jpg" width="100%" hight="100%" />
+            </pattern>
+            <text x="25" y="100" font-size="45" font-family ="Kumar One" fill="url(#pattern1)">SVG</text>
+        </svg>
+        <svg class="svg">
+            <text x="10" y="100" font-size="45" fill="none" stroke="#880e4f" stroke-width="1" font-family ="Kumar One">TEXT</text>
+        </svg>
+    </div>
+</body>
+</html>

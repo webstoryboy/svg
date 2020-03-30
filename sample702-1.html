@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG</title>
+    <style>
+        .svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+        .aniRect1 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect1 4s infinite linear;
+        }
+        @keyframes rect1 {
+            0% {stroke: #880e4f;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f;}
+        }
+        .aniRect2 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect2 4s infinite linear;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+        }
+        @keyframes rect2 {
+            0% {stroke: #880e4f; stroke-dashoffset: 100;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f; stroke-dashoffset: 0;}
+        }
+        .aniRect3 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect3 4s infinite linear;
+            stroke-dasharray: 480;
+            stroke-dashoffset: 480;
+        }
+        @keyframes rect3 {
+            0% {stroke: #880e4f; stroke-dashoffset: 480;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f; stroke-dashoffset: 0;}
+        }
+        .aniRect4 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect4 4s infinite linear;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+        }
+        @keyframes rect4 {
+            0% {stroke: #880e4f; stroke-dasharray: 100;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f; stroke-dasharray: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="svgBox">
+        <svg class="svg">
+            <rect class="aniRect1"></rect>
+        </svg>
+        <svg class="svg">
+            <rect class="aniRect2"></rect>
+        </svg>
+        <svg class="svg">
+            <rect class="aniRect3"></rect>
+        </svg>
+        <svg class="svg">
+            <rect class="aniRect4"></rect>
+        </svg>
+    </div>
+</body>
+</html>

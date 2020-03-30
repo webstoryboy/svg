@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG</title>
+    <style>
+    .svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+    </style>
+</head>
+<body>
+    <div class="svgBox">
+        <svg class="svg">
+            <radialGradient id="radialGradient1" gradientUnits="userSpaceOnUse">
+                <stop offset="0" style="stop-color: #f6d365" />
+                <stop offset="1" style="stop-color: #fda085" />
+            </radialGradient>
+            <polygon fill="url(#radialGradient1)" points="130,128 65,148 15,102 30,36 95,16 145,62"></polygon>
+        </svg>
+        <svg class="svg">
+            <radialGradient id="radialGradient2" gradientUnits="userSpaceOnUse">
+                <stop offset="0" style="stop-color: #f6d365" />
+                <stop offset="1" style="stop-color: #fda085" />
+            </radialGradient>
+            <polygon fill="url(#radialGradient2)" points="120,142 9,93 107,22"></polygon>
+        </svg>
+    </div>
+</body>
+</html>

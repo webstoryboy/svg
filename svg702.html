@@ -1,14 +1,14 @@
 
-<h2>SVG Gradient</h2>
+<h2>Rect Animation</h2>
 <p></p>
 
 <hr />
 
-<h3>SVG Gradient</h3> 
+<h3>Rect Animation</h3> 
 <p class="blue"></p>
 
 
-<div class="table-responsive">
+<!--<div class="table-responsive">
     <table class="table table-bordered table-striped table-hover">
         <colgroup>
             <col style="width: 30%">
@@ -27,12 +27,12 @@
             </tr>
         </tbody>
     </table>
-</div>
+</div>-->
 
 
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
-    <li>&lt;view&gt; 요소는 이미지의 확대/축소를 설정합니다.</li>
+    <li>Rect Animation</li>
 </ul>
 
 
@@ -64,6 +64,257 @@
         </tbody>
     </table>
 </div> -->
+
+
+
+<style>
+.svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+        .aniRect1 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect1 4s infinite linear;
+        }
+        @keyframes rect1 {
+            0% {stroke: #880e4f;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f;}
+        }
+        .aniRect2 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect2 4s infinite linear;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+        }
+        @keyframes rect2 {
+            0% {stroke: #880e4f; stroke-dashoffset: 100;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f; stroke-dashoffset: 0;}
+        }
+        .aniRect3 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect3 4s infinite linear;
+            stroke-dasharray: 480;
+            stroke-dashoffset: 480;
+        }
+        @keyframes rect3 {
+            0% {stroke: #880e4f; stroke-dashoffset: 480;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f; stroke-dashoffset: 0;}
+        }
+        .aniRect4 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect4 4s infinite linear;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+        }
+        @keyframes rect4 {
+            0% {stroke: #880e4f; stroke-dasharray: 100;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f; stroke-dasharray: 0;}
+        }
+</style>
+
+<!-- Sample1 -->
+<h4 class="pt50">1. Rect Animation <span><a href="https://webstoryboy.github.io/CSS/sample702-1.html" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span></h4>
+<p>SVG를 이용한 Rect Animation입니다.</p>
+<div class="sample">
+    <h5>Sample1<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="svgBox">
+            <svg class="svg">
+                <rect class="aniRect1"></rect>
+            </svg>
+            <svg class="svg">
+                <rect class="aniRect2"></rect>
+            </svg>
+            <svg class="svg">
+                <rect class="aniRect3"></rect>
+            </svg>
+            <svg class="svg">
+                <rect class="aniRect4"></rect>
+            </svg>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<div class="sample">
+    <h5>HTML<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;div class="svgBox"&gt;
+    &lt;svg class="svg"&gt;
+        &lt;rect class="aniRect1"&gt;&lt;/rect&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;rect class="aniRect2"&gt;&lt;/rect&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;rect class="aniRect3"&gt;&lt;/rect&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;rect class="aniRect4"&gt;&lt;/rect&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-css">.svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+.aniRect1 {
+    width: 120px; height: 120px; x: 20px; y: 20px;
+    fill: none; stroke: #880e4f; stroke-width: 4;
+    animation: rect1 4s infinite linear;
+}
+@keyframes rect1 {
+    0% {stroke: #880e4f;}
+    35% {stroke: #311b92;}
+    70% {stroke: #004d40;}
+    100% {stroke: #880e4f;}
+}
+.aniRect2 {
+    width: 120px; height: 120px; x: 20px; y: 20px;
+    fill: none; stroke: #880e4f; stroke-width: 4;
+    animation: rect2 4s infinite linear;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+}
+@keyframes rect2 {
+    0% {stroke: #880e4f; stroke-dashoffset: 100;}
+    35% {stroke: #311b92;}
+    70% {stroke: #004d40;}
+    100% {stroke: #880e4f; stroke-dashoffset: 0;}
+}
+.aniRect3 {
+    width: 120px; height: 120px; x: 20px; y: 20px;
+    fill: none; stroke: #880e4f; stroke-width: 4;
+    animation: rect3 4s infinite linear;
+    stroke-dasharray: 480;
+    stroke-dashoffset: 480;
+}
+@keyframes rect3 {
+    0% {stroke: #880e4f; stroke-dashoffset: 480;}
+    35% {stroke: #311b92;}
+    70% {stroke: #004d40;}
+    100% {stroke: #880e4f; stroke-dashoffset: 0;}
+}
+.aniRect4 {
+    width: 120px; height: 120px; x: 20px; y: 20px;
+    fill: none; stroke: #880e4f; stroke-width: 4;
+    animation: rect4 4s infinite linear;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+}
+@keyframes rect4 {
+    0% {stroke: #880e4f; stroke-dasharray: 100;}
+    35% {stroke: #311b92;}
+    70% {stroke: #004d40;}
+    100% {stroke: #880e4f; stroke-dasharray: 0;}
+}</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+<div class="sample">
+    <h5>TOTAL<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html on">
+<pre class="line-numbers"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;SVG&lt;/title&gt;
+    &lt;style&gt;
+        .svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+        .aniRect1 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect1 4s infinite linear;
+        }
+        @keyframes rect1 {
+            0% {stroke: #880e4f;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f;}
+        }
+        .aniRect2 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect2 4s infinite linear;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+        }
+        @keyframes rect2 {
+            0% {stroke: #880e4f; stroke-dashoffset: 100;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f; stroke-dashoffset: 0;}
+        }
+        .aniRect3 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect3 4s infinite linear;
+            stroke-dasharray: 480;
+            stroke-dashoffset: 480;
+        }
+        @keyframes rect3 {
+            0% {stroke: #880e4f; stroke-dashoffset: 480;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f; stroke-dashoffset: 0;}
+        }
+        .aniRect4 {
+            width: 120px; height: 120px; x: 20px; y: 20px;
+            fill: none; stroke: #880e4f; stroke-width: 4;
+            animation: rect4 4s infinite linear;
+            stroke-dasharray: 100;
+            stroke-dashoffset: 100;
+        }
+        @keyframes rect4 {
+            0% {stroke: #880e4f; stroke-dasharray: 100;}
+            35% {stroke: #311b92;}
+            70% {stroke: #004d40;}
+            100% {stroke: #880e4f; stroke-dasharray: 0;}
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="svgBox"&gt;
+        &lt;svg class="svg"&gt;
+            &lt;rect class="aniRect1"&gt;&lt;/rect&gt;
+        &lt;/svg&gt;
+        &lt;svg class="svg"&gt;
+            &lt;rect class="aniRect2"&gt;&lt;/rect&gt;
+        &lt;/svg&gt;
+        &lt;svg class="svg"&gt;
+            &lt;rect class="aniRect3"&gt;&lt;/rect&gt;
+        &lt;/svg&gt;
+        &lt;svg class="svg"&gt;
+            &lt;rect class="aniRect4"&gt;&lt;/rect&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+    
+
 
 
 <h4 class="pt50">호환성(Compatibility) 

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG</title>
+    <style>
+    .svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+    </style>
+</head>
+<body>
+    <div class="svgBox">
+        <svg class="svg">
+            <image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="160" hight="160" />
+        </svg>
+        <svg class="svg">
+            <image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="200%" clip-path="circle(50px at center)" />
+        </svg>
+        <svg class="svg">
+            <clipPath id="clipPath1">
+                <polygon points="120,142 9,93 107,22"></polygon>
+            </clipPath>
+            <image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="url(#clipPath1)" />
+        </svg>
+        <svg class="svg">
+            <clipPath id="clipPath2">
+                <polygon points="134,134 88,117 48,145 49,97 10,68 57,54 72,8 100,48 149,48 119,87 "></polygon>
+            </clipPath>
+            <image xlink:href="https://tistory1.daumcdn.net/tistory/2933724/skin/images/test2.jpg" width="100%" hight="100%" clip-path="url(#clipPath2)" />
+        </svg>
+    </div>
+</body>
+</html>

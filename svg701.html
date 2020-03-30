@@ -1,14 +1,14 @@
 
-<h2>SVG 도형</h2>
-<p></p>
+<h2>dasharray</h2>
+<p>dasharray</p>
 
 <hr />
 
-<h3>SVG 도형</h3> 
+<h3>dasharray</h3> 
 <p class="blue"></p>
 
 
-<div class="table-responsive">
+<!--<div class="table-responsive">
     <table class="table table-bordered table-striped table-hover">
         <colgroup>
             <col style="width: 30%">
@@ -27,12 +27,12 @@
             </tr>
         </tbody>
     </table>
-</div>
+</div>-->
 
 
 <h4 class="pt50">정의(Definition)</h4>
 <ul>
-    <li>&lt;view&gt; 요소는 이미지의 확대/축소를 설정합니다.</li>
+    <li>dasharray.</li>
 </ul>
 
 
@@ -64,6 +64,325 @@
         </tbody>
     </table>
 </div> -->
+
+
+
+<style>
+.svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+</style>
+
+<!-- Sample1 -->
+<h4 class="pt50">1. linecap <span><a href="https://webstoryboy.github.io/CSS/sample701-1.html" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span></h4>
+<p>SVG를 이용한 linecap입니다.</p>
+<div class="sample">
+    <h5>Sample1<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="svgBox">
+            <svg class="svg">
+                <path stroke-width="1" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 20 l120 00"></path>
+                <path stroke-width="2" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 40 l120 00"></path>
+                <path stroke-width="3" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 60 l120 00"></path>
+                <path stroke-width="4" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 80 l120 00"></path>
+                <path stroke-width="5" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 100 l120 00"></path>
+                <path stroke-width="6" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 120 l120 00"></path>
+                <path stroke-width="7" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 140 l120 00"></path>
+            </svg>
+            <svg class="svg">
+                <path stroke-width="1" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 20 l120 00"></path>
+                <path stroke-width="2" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 40 l120 00"></path>
+                <path stroke-width="3" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 60 l120 00"></path>
+                <path stroke-width="4" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 80 l120 00"></path>
+                <path stroke-width="5" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 100 l120 00"></path>
+                <path stroke-width="6" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 120 l120 00"></path>
+                <path stroke-width="7" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 140 l120 00"></path>
+            </svg>
+            <svg class="svg">
+                <path stroke-width="1" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 20 l120 00"></path>
+                <path stroke-width="2" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 40 l120 00"></path>
+                <path stroke-width="3" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 60 l120 00"></path>
+                <path stroke-width="4" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 80 l120 00"></path>
+                <path stroke-width="5" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 100 l120 00"></path>
+                <path stroke-width="6" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 120 l120 00"></path>
+                <path stroke-width="7" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 140 l120 00"></path>
+            </svg>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<div class="sample">
+    <h5>HTML<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;div class="svgBox"&gt;
+    &lt;svg class="svg"&gt;
+        &lt;path stroke-width="1" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="2" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="3" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="4" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="5" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="6" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="7" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;path stroke-width="1" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="2" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="3" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="4" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="5" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="6" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="7" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;path stroke-width="1" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="2" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="3" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="4" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="5" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="6" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="7" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html on">
+<pre class="line-numbers"><code class="language-css">.svg {width: 160px; height: 160px; background: #ffebee;}</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+<div class="sample">
+    <h5>TOTAL<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html on">
+<pre class="line-numbers"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;SVG&lt;/title&gt;
+    &lt;style&gt;
+    .svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="svgBox"&gt;
+        &lt;svg class="svg"&gt;
+            &lt;path stroke-width="1" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="2" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="3" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="4" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="5" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="6" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="7" stroke-linecap="spuare" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+        &lt;svg class="svg"&gt;
+            &lt;path stroke-width="1" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="2" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="3" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="4" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="5" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="6" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="7" stroke-linecap="round" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+        &lt;svg class="svg"&gt;
+            &lt;path stroke-width="1" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="2" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="3" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="4" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="5" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="6" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="7" stroke-linecap="butt" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+</div>
+<!-- sample1 -->
+
+
+
+
+
+
+<style>
+.svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+</style>
+
+<!-- Sample2 -->
+<h4 class="pt50">2. dasharray <span><a href="https://webstoryboy.github.io/CSS/sample701-1.html" target="_blank"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/blank.gif" class="blank_icon"></a></span></h4>
+<p>SVG를 이용한 dasharray입니다.</p>
+<div class="sample">
+    <h5>Sample2<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="ex">
+        <!-- ex -->
+        <div class="svgBox">
+            <svg class="svg">
+                <path stroke-width="1" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 20 l120 00"></path>
+                <path stroke-width="2" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 40 l120 00"></path>
+                <path stroke-width="3" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 60 l120 00"></path>
+                <path stroke-width="4" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 80 l120 00"></path>
+                <path stroke-width="5" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 100 l120 00"></path>
+                <path stroke-width="6" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 120 l120 00"></path>
+                <path stroke-width="7" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 140 l120 00"></path>
+            </svg>
+            <svg class="svg">
+                <path stroke-width="1" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 20 l120 00"></path>
+                <path stroke-width="2" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 40 l120 00"></path>
+                <path stroke-width="3" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 60 l120 00"></path>
+                <path stroke-width="4" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 80 l120 00"></path>
+                <path stroke-width="5" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 100 l120 00"></path>
+                <path stroke-width="6" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 120 l120 00"></path>
+                <path stroke-width="7" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 140 l120 00"></path>
+            </svg>
+            <svg class="svg">
+                <path stroke-width="1" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 20 l120 00"></path>
+                <path stroke-width="2" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 40 l120 00"></path>
+                <path stroke-width="3" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 60 l120 00"></path>
+                <path stroke-width="4" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 80 l120 00"></path>
+                <path stroke-width="5" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 100 l120 00"></path>
+                <path stroke-width="6" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 120 l120 00"></path>
+                <path stroke-width="7" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 140 l120 00"></path>
+            </svg>
+            <svg class="svg">
+                <path stroke-width="1" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 20 l120 00"></path>
+                <path stroke-width="2" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 40 l120 00"></path>
+                <path stroke-width="3" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 60 l120 00"></path>
+                <path stroke-width="4" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 80 l120 00"></path>
+                <path stroke-width="5" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 100 l120 00"></path>
+                <path stroke-width="6" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 120 l120 00"></path>
+                <path stroke-width="7" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 140 l120 00"></path>
+            </svg>
+        </div>
+        <!-- ex -->
+    </div>
+</div>
+<!-- sample2 -->
+
+
+
+<div class="sample">
+    <h5>HTML<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html">
+<pre class="line-numbers"><code class="language-markup">&lt;div class="svgBox"&gt;
+    &lt;svg class="svg"&gt;
+        &lt;path stroke-width="1" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="2" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="3" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="4" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="5" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="6" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="7" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;path stroke-width="1" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="2" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="3" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="4" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="5" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="6" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="7" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;path stroke-width="1" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="2" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="3" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="4" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="5" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="6" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="7" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+    &lt;svg class="svg"&gt;
+        &lt;path stroke-width="1" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="2" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="3" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="4" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="5" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="6" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+        &lt;path stroke-width="7" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+<div class="sample">
+    <h5>CSS<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html on">
+<pre class="line-numbers"><code class="language-css">.svg {width: 160px; height: 160px; background: #ffebee;}</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+<div class="sample">
+    <h5>TOTAL<span class="dot"><i></i><i></i><i></i></span></h5>
+    <div class="html on">
+<pre class="line-numbers"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+    &lt;title&gt;SVG&lt;/title&gt;
+    &lt;style&gt;
+        .svgBox .svg {width: 160px; height: 160px; background: #ffebee;}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="svgBox"&gt;
+        &lt;svg class="svg"&gt;
+            &lt;path stroke-width="1" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="2" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="3" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="4" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="5" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="6" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="7" stroke-dasharray="5,5" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+        &lt;svg class="svg"&gt;
+            &lt;path stroke-width="1" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="2" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="3" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="4" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="5" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="6" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="7" stroke-linecap="round" stroke-dasharray="0,15" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+        &lt;svg class="svg"&gt;
+            &lt;path stroke-width="1" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="2" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="3" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="4" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="5" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="6" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="7" stroke-linecap="round" stroke-dasharray="10,10" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+        &lt;svg class="svg"&gt;
+            &lt;path stroke-width="1" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 20 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="2" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 40 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="3" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 60 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="4" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 80 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="5" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 100 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="6" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 120 l120 00"&gt;&lt;/path&gt;
+            &lt;path stroke-width="7" stroke-linecap="round" stroke-dasharray="20,10,1,5,5" fill="none" stroke="#e65100" d="m20 140 l120 00"&gt;&lt;/path&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </div>
+</div>
+<!-- sample2 -->
+
+
+
 
 
 <h4 class="pt50">호환성(Compatibility) 

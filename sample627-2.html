@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG</title>
+    <link href="https://fonts.googleapis.com/css?family=Kumar+One&display=swap" rel="stylesheet">
+    <style>
+        .text-wrap {background-color: #ffebee; width: 160px; height: 160px; float: left; margin-right: 10px;}
+        .text-clip1 { 
+            width: 160px; height: 160px; 
+            line-height: 176px; text-align: center;
+            font-size: 45px;
+            font-family : "Kumar One";
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-image: url(https://tistory2.daumcdn.net/tistory/2933724/skin/images/hover03.jpg);
+            background-size: cover;
+        }
+        .text-clip2 {
+            width: 160px; height: 160px; 
+            line-height: 176px; text-align: center;
+            font-size: 45px;
+            font-family : "Kumar One";
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+        }
+        .text-clip3 {
+            width: 160px; height: 160px; 
+            line-height: 176px; text-align: center;
+            font-size: 45px;
+            font-family : "Kumar One";
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="svgBox">
+        <div class="text-wrap">
+            <div class="text-clip1">
+                CSS
+            </div>
+        </div>
+        <div class="text-wrap">
+            <div class="text-clip2">
+                CSS
+            </div>
+        </div>
+        <div class="text-wrap">
+            <div class="text-clip3">
+                CSS
+            </div>
+        </div>
+    </div>
+</body>
+</html>
